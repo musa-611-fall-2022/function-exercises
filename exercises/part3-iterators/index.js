@@ -135,7 +135,7 @@ let reduceSum = (arr) => {
 
 console.log('reduceSum success:', reduceSum([1, 2, 3, 4, 5, 4, 4]) === 23);
 
-/* =====================
+/* ======================
 Instructions: Write a function which takes an array and returns the product of
   all the items in the array. Copy your definition of multiply from part 1; your
   reduceProduct function MUST use the multiply function and MUST NOT change the

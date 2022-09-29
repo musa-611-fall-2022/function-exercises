@@ -17,7 +17,7 @@ Instructions: Write a function which takes an array and returns a new array,
   filtered according to a "predicate" that you procide (a predicate is a
   function that takes one item as input and returns either true or false based
   on whether the item satisfies some condition).
-===================== */
+====================== */
 
 let filter = (arr, pred) => {
   let result = [];

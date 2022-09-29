@@ -67,7 +67,7 @@ let multiply = (x, y) => {
 
 console.log('multiply success:', multiply(4, 6) === 24);
 
-/* =====================
+/* ======================
 Instructions: "Write a function that returns the value of an array at a specified index"
 Example: "valueAtIndex(['Mercury', 'Venus', 'Earth', 'Mars'], 2) should return 'Earth'"
 ===================== */
