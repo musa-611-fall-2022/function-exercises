@@ -37,9 +37,9 @@ Instructions: Write a function which takes an array and returns a new array with
 
 let isEven = (x) => {
   if (typeof x == "number"){
-      return (x%2 === 0)
+      return (x%2 === 0);
   } else {
-      return ("NA")
+      return ("NA");
   }
 };
 
@@ -63,9 +63,9 @@ Instructions: Write a function which takes an array and returns a new array with
 
 let isOdd = (x) => {
   if (typeof x == "number"){
-      return (x%2 !== 0 && x !== 0)
+      return (x%2 !== 0 && x !== 0);
   } else {
-      return ("NA")
+      return ("NA");
   }
 };
 
@@ -130,7 +130,7 @@ let add = (n1, n2) => {
 
 let reduceSum = (arr) => {
   const sum = arr;
-  return sum.reduce((acc, cur) => add(acc, cur))
+  return sum.reduce((acc, cur) => add(acc, cur));
 };
 
 console.log('reduceSum success:', reduceSum([1, 2, 3, 4, 5, 4, 4]) === 23);
@@ -148,7 +148,7 @@ let multiply = (n1, n2) => {
 
 let reduceProduct = (arr) => {
   const product = arr;
-  return product.reduce((acc, cur) => multiply(acc, cur))
+  return product.reduce((acc, cur) => multiply(acc, cur));
 };
 
 console.log('reduceProduct success:', reduceProduct([1, 2, 3, 4, 5, 4, 4]) === 1920);

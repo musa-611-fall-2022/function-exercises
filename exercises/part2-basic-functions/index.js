@@ -50,8 +50,8 @@ let add = (x, y) => {
     if (typeof x == "number"){
         return x + y;
     } else {
-        return ("NA")
-    }    
+        return ("NA");
+    }
 };
 
 console.log('add success:', add(4, 6) === 10);
@@ -95,9 +95,9 @@ Instructions: Write a function that returns true if a number is even.
 
 let isEven = (x) => {
     if (typeof x == "number"){
-        return (x%2 === 0)
+        return (x%2 === 0);
     } else {
-        return ("NA")
+        return ("NA");
     }
 };
 
@@ -109,9 +109,9 @@ Instructions: Write a function that returns true if a number is odd.
 
 let isOdd = (x) => {
     if (typeof x == "number"){
-        return (x%2 !== 0 && x !== 0)
+        return (x%2 !== 0 && x !== 0);
     } else {
-        return ("NA")
+        return ("NA");
     }
 };
 
@@ -119,4 +119,4 @@ console.log('isOdd success:', isOdd(4) === false && isOdd(5) === true);
 
 export {
     plusOne, timesThree, add, multiply, isEven, isOdd,
-}
+};

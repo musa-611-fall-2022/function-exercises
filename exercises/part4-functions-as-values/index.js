@@ -1,4 +1,4 @@
-import { plusOne, timesThree, add, multiply, isEven, isOdd,} from '../part2-basic-functions/index.js';
+import { plusOne, timesThree, add, multiply, isEven, isOdd } from '../part2-basic-functions/index.js';
 /* globals _, plusOne, timesThree, add, multiply, isEven, isOdd */
 
 /* eslint no-unused-vars:off */
@@ -88,7 +88,7 @@ let reduce = (arr, func, initial) => {
       result = i;
     } else {
       result = func(result, i);
-    };
+    }
     }
   return result;
 };
@@ -105,11 +105,11 @@ Bonus: Create a function called sumSquares that takes an array and returns
 ===================== */
 
 let sumSquares = (arr) => {
-  let result = []
+  let result = [];
   for (let i of arr){
     result.push(multiply(i, i));
-  };
-  return reduce(result, add, 0)
+  }
+  return reduce(result, add, 0);
 };
 
 console.log('sumSquares success:', sumSquares([1, 2, 3, 4]) === 30);
