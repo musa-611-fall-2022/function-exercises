@@ -25,8 +25,24 @@ Start code
 
 ===================== */
 
+let res = '';
 
+for (let i = 1; i < 101; i++) {
+    if (i % 3 == 0 && i % 5 != 0) {
+        res += 'Fizz\n';
+    }
+    else if(i % 5 == 0 && i % 3 != 0) {
+        res += 'Buzz\n';
+    }
+    else if (i % 5 == 0 && i % 3 == 0) {
+        res += 'FizzBuzz\n';
+    }
+    else {
+        res += toString(i + '\n');
+    }
+}
 
+console.log(res);
 
 /* =====================
 
