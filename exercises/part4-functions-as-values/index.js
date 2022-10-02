@@ -39,7 +39,7 @@ Instructions: Write a function which takes an array and returns a new array,
 let map = (arr, func) => {
   let result = arr;
   let count = 0;
-  for (let i of arr){
+  for (let i of result){
     result[count] = func(i);
     count++;
   }
