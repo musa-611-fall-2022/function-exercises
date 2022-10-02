@@ -37,15 +37,12 @@ Instructions: Write a function which takes an array and returns a new array,
 ===================== */
 
 let map = (arr, func) => {
-  console.log(arr)
   let result = [];
   let count = 0;
   for (let i of arr){
     result[count] = func(i);
     count++;
   }
-  console.log(arr)
-
   return result;
 };
 
