@@ -116,9 +116,3 @@ let isOdd = (x) => {
 };
 
 console.log('isOdd success:', isOdd(4) === false && isOdd(5) === true);
-
-export {
-    plusOne, timesThree, add, multiply, isEven, isOdd,
-};
-
-Object.assign(window, { plusOne, timesThree, add, multiply, isEven, isOdd });

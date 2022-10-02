@@ -1,4 +1,3 @@
-import { plusOne, timesThree, add, multiply, isEven, isOdd } from '../part2-basic-functions/index.js';
 /* globals _, plusOne, timesThree, add, multiply, isEven, isOdd */
 
 /* eslint no-unused-vars:off */
