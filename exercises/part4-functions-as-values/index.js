@@ -38,7 +38,12 @@ Instructions: Write a function which takes an array and returns a new array,
 
 let map = (arr, func) => {
   let result = arr;
-  return result.map(x => func(x));
+  let count = 0;
+  for (let i of arr){
+    result[count] = func(i);
+    count++;
+  }
+  return result;
 };
 
 console.log('map success #1:', _(map([1, 2, 3, 4, 5, 4, 4], plusOne)).isEqual([2, 3, 4, 5, 6, 5, 5]));
