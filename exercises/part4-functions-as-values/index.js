@@ -70,7 +70,7 @@ let reduce = (arr, func, initial) => {
   let num0 = initial;
   for(const num of arr) {
     num0 = func(num0, num);
-  };
+  }
   return num0;
 };
 
@@ -89,7 +89,7 @@ let sumSquares = (arr) => {
   let num0 = 0;
   for(const num of arr) {
     num0 = add(num0, num*num);
-  };
+  }
   return num0;
 };
 
