@@ -70,7 +70,6 @@ Example: "valueAtIndex(['Mercury', 'Venus', 'Earth', 'Mars'], 2) should return '
 
 let valueAtIndex = (arr, index) => {
     return arr[index];
-    
 };
 
 console.log('valueAtIndex success:', valueAtIndex([9, 8, 7, 6, 5], 2) === 7);

@@ -34,10 +34,10 @@ let isEven = (num) => {
 };
 
 let filterEven = (arr) => {
-  let newArr = []
+  let newArr = [];
   for(const num of arr) {
     if(isEven(num)){
-      newArr.push(num)
+      newArr.push(num);
     }
   }
   return newArr;
@@ -57,10 +57,10 @@ let isOdd = (num) => {
 };
 
 let filterOdd = (arr) => {
-  let newArr = []
+  let newArr = [];
   for(const num of arr) {
     if(isOdd(num)){
-      newArr.push(num)
+      newArr.push(num);
     }
   }
   return newArr;
@@ -82,9 +82,9 @@ let plusOne = (num) => {
 };
 
 let mapIncrement = (arr) => {
-  let newArr = []
+  let newArr = [];
   for(const num of arr) {
-      newArr.push(plusOne(num))
+      newArr.push(plusOne(num));
   }
   return newArr;
 };
@@ -103,9 +103,9 @@ let timesThree = (num) => {
 };
 
 let mapTriple = (arr) => {
-  let newArr = []
+  let newArr = [];
   for(const num of arr) {
-      newArr.push(timesThree(num))
+      newArr.push(timesThree(num));
   }
   return newArr;
 };
@@ -127,7 +127,7 @@ let reduceSum = (arr) => {
   let num0 = 0;
   for(const num of arr) {
     num0 = add(num0, num);
-  };
+  }
   return num0;
 };
 
@@ -148,7 +148,7 @@ let reduceProduct = (arr) => {
   let num0 = 1;
   for(const num of arr) {
     num0 = multiply(num0, num);
-  };
+  }
   return num0;
 };
 
