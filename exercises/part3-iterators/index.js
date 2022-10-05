@@ -22,8 +22,8 @@ let countItem = (arr, item) => {
   if (element === item) {
     count += 1;
   }
-})
-  return count
+});
+  return count;
 };
 
 console.log('countItem success:', countItem([1, 2, 3, 4, 5, 4, 4], 4) === 3);
@@ -42,7 +42,7 @@ let filterEven = (arr) => {
   if (isEven(element)) {
     newarr.push(element);
   }
-})
+});
   return newarr;
 };
 
@@ -54,14 +54,14 @@ Instructions: Write a function which takes an array and returns a new array with
   function MUST use the isOdd function and MUST NOT change the original array.
 ===================== */
 
-let isOdd = (n) =>  {return n%2 !==0};;
+let isOdd = (n) =>  {return n%2 !==0};
 let filterOdd = (arr) => {
   let newarr = [];
   arr.forEach(element => {
   if (isOdd(element)) {
     newarr.push(element);
   }
-})
+});
   return newarr;
 };
 
@@ -78,10 +78,10 @@ let plusOne = (n) => {return n+1};
 let mapIncrement = (arr) => {
   let newarr = [];
   arr.forEach(element => {
-  
+
     newarr.push(plusOne(element));
-  
-})
+
+});
   return newarr;
 };
 
@@ -98,10 +98,7 @@ let timesThree = (n) => {return 3*n};
 let mapTriple = (arr) => {
   let newarr = [];
   arr.forEach(element => {
-  
-    newarr.push(timesThree(element));
-  
-})
+    newarr.push(timesThree(element));});
   return newarr;
 };
 
@@ -118,10 +115,10 @@ let add = (n1, n2) => {return n1+n2};
 let reduceSum = (arr) => {
   let sum = 0;
   arr.forEach(element => {
-  
-    sum=add(sum,element);
-  
-})
+
+    sum=add(sum, element);
+
+});
   return sum;
 };
 
@@ -138,10 +135,10 @@ let multiply = (n1, n2) => {return n1*n2};
 let reduceProduct = (arr) => {
   let prod = 1;
   arr.forEach(element => {
-  
-    prod=multiply(prod,element);
-  
-})
+
+    prod=multiply(prod, element);
+
+});
   return prod;
 };
 

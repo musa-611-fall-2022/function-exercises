@@ -14,7 +14,7 @@ Example: "age(2000) should return 22"
 ===================== */
 
 let age = (birthYear) => {
-    2022-birthYear;
+    return 2022-birthYear;
 };
 
 console.log('age success:', age(1971) === 51);
@@ -42,7 +42,7 @@ Instructions: Write a function that adds two given numbers
 Example: "add(2, 3) should return 5"
 ===================== */
 
-let add = (a,b) => {return a+b};
+let add = (a, b) => {return a+b};
 
 console.log('add success:', add(4, 6) === 10);
 
@@ -51,7 +51,7 @@ Instructions: Write a function that multiplies two given numbers
 Example: "multiply(2, 3) should return 6"
 ===================== */
 
-let multiply = (x,y) => {return x*y};
+let multiply = (x, y) => {return x*y};
 
 console.log('multiply success:', multiply(4, 6) === 24);
 
@@ -60,7 +60,7 @@ Instructions: "Write a function that returns the value of an array at a specifie
 Example: "valueAtIndex(['Mercury', 'Venus', 'Earth', 'Mars'], 2) should return 'Earth'"
 ===================== */
 
-let valueAtIndex = (array,i) => {return array[i]};
+let valueAtIndex = (array, i) => {return array[i]};
 
 console.log('valueAtIndex success:', valueAtIndex([9, 8, 7, 6, 5], 2) === 7);
 
@@ -69,7 +69,7 @@ Instructions: "Write a function that returns the value of an object at a specifi
 Example: "valueAtKey({'name': 'Nathan'}, 'name') should return 'Nathan'"
 ===================== */
 
-let valueAtKey = (dic,key) => {return dict[key]};
+let valueAtKey = (dic, key) => {return dic[key]};
 
 console.log('valueAtKey success:', valueAtKey({ 'foo': 'bar' }, 'foo') === 'bar');
 
