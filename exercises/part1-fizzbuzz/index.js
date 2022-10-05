@@ -28,18 +28,17 @@ Start code
 
 let num1 = 1;
 while (num1 <= 100) {
-  if(num1 % 3 == 00 || num1 % 5 == 0){
+  if(num1 % 3 == 0 || num1 % 5 == 0){
     if(num1 % 3 == 0 && num1 % 5 == 0){
         console.log("FizzBuzz");
     }
     else if(num1 % 3 == 0){
-        console.log("Fizz"); 
+        console.log("Fizz");
     }
     else{
     console.log("Buzz");
     }
   }
-  
   else{
     console.log(num1);
   }
