@@ -13,9 +13,16 @@ in years. (Let's just assume this person was born January 1 at 12:01 AM)
 Example: "age(2000) should return 22"
 ===================== */
 
-let age = (birthYear) => {};
+function age (){
+    let ageYears;
+    let birthYear = prompt("What year were you born?", "YYYY");
+}
 
-console.log('age success:', age(1971) === 51);
+age();
+
+/*let age = (birthYear) => {};
+
+console.log('age success:', age(1971) === 51);*/
 
 /* =====================
 Instructions: Write a function that adds one to the number provided
