@@ -25,6 +25,24 @@ Start code
 
 ===================== */
 
+for(let i = 0; i <= 100; i++){
+  if (i % 3 == 0)  {
+    console.log("Fizz")
+  }
+  if (i % 5 == 0) {
+    console.log("Buzz")
+  }
+   if (i % 3 == 0 && i % 5 == 0){
+  console.log("FizzBuzz")
+  }
+  if (i % 3 != 0 && i % 5 != 0){
+  console.log(i)
+  }
+  }
+
+
+  /*for(var x=1;x<101;x++)console.log((((x%3?'':'Fizz')+(x%5?'':'Buzz'))||x));*/
+
 
 
 
