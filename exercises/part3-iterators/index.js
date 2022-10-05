@@ -44,9 +44,10 @@ let filterEven = (arr) => {
   let arrCopy = [];
   for (i = 0; i < arr.length; i++) {
     if(isEven(arr[i])) {
-      arrCopy[i] = arr[i];
+      arrCopy.push(arr[i]);
     }
   }
+  return arrCopy;
 };
 
 console.log('filterEven success:', _(filterEven([1, 2, 3, 4, 5, 4, 4])).isEqual([2, 4, 4, 4]));
@@ -57,8 +58,19 @@ Instructions: Write a function which takes an array and returns a new array with
   function MUST use the isOdd function and MUST NOT change the original array.
 ===================== */
 
-let isOdd = (n) => {};
-let filterOdd = (arr) => {};
+let isOdd = (n) => {
+  return n % 2 != 0 ;
+};
+let filterOdd = (arr) => {
+  let i = 0;
+  let arrCopy = [];
+  for (i = 0; i < arr.length; i++) {
+    if(isOdd(arr[i])) {
+      arrCopy.push(arr[i]);
+    }
+  }
+  return arrCopy;
+};
 
 console.log('filterOdd success:', _(filterOdd([1, 2, 3, 4, 5, 4, 4])).isEqual([1, 3, 5]));
 
