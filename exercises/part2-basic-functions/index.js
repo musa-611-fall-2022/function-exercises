@@ -97,8 +97,8 @@ Instructions: Write a function that returns true if a number is even.
 ===================== */
 
 let isEven = (i) => {
-    let result = i/2 % 1 === 0
-    return result
+    let result = i/2 % 1 === 0;
+    return result;
 };
 
 console.log('isEven success:', isEven(2) === true && isEven(3) === false);

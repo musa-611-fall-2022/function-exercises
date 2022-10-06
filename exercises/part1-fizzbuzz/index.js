@@ -36,16 +36,6 @@ while(i <=100 ){
 //question 2
 
 let i = 0
-while(i <= 100) {
-    if (i/3 % 1 = 0) {
-      console.log("NOT WORKING")  
-    }
-    console.log(i)
-    i++
-}
-
-
-let i = 0
 while(i <=100 ){
     if (i/3 % 1 === 0) {
         console.log("fizz")
