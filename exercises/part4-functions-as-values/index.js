@@ -23,7 +23,7 @@ let filter = (arr, pred) => {
   if (pred(element)) {
     newarr.push(element);
   }
-})
+});
   return newarr;
 };
 
@@ -38,10 +38,10 @@ Instructions: Write a function which takes an array and returns a new array,
 let map = (arr, func) => {
   let newarr = [];
   arr.forEach(element => {
-  
+
     newarr.push(func(element));
-  
-})
+
+});
   return newarr;
 };
 
@@ -71,10 +71,10 @@ Instructions: Write a function which takes an array and returns the value of
 let reduce = (arr, func, initial) => {
   let red = initial;
   arr.forEach(element => {
-  
-    red=func(red,element);
-  
-})
+
+    red=func(red, element);
+
+});
   return red;
 };
 
@@ -91,7 +91,7 @@ Bonus: Create a function called sumSquares that takes an array and returns
 
 let sumSquares = (arr) => {
   let SS = 0;
-  SS=reduce(arr,(x, y) => x + y*y,SS);
+  SS=reduce(arr, (x, y) => x + y*y, SS);
   return SS;
 };
 
