@@ -118,7 +118,11 @@ let add = (n1, n2) => {
 };
 
 let reduceSum = (arr) => {
-
+  let sum = 0;
+  for (let x of arr) {
+    sum = add(x, sum)
+  }
+  return sum
 };
 
 console.log('reduceSum success:', reduceSum([1, 2, 3, 4, 5, 4, 4]) === 23);
