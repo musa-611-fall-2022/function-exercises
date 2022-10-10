@@ -69,12 +69,16 @@ Instructions: Write a function which takes an array and returns the value of
 
 let reduce = (arr, func, initial) => {
   let result = []
-  let Initial = parseInt(initial)
-  for(x of arr) {
-    value = func(Initial, result)
-    result.push(value)
+  if (func === add || multiply) {
+    for(let x of arr) {
+      value = func(initial, x)
+      result.push(value)
+    }
+    return result.reduce(func,initial)
+  } else {
+    arr.reverse()
   }
-  return value
+
 };
 
 console.log('reduce success #1:', reduce([1, 2, 3, 4, 5, 4, 4], add, 0) === 23);
