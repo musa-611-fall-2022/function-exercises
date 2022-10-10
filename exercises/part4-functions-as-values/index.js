@@ -38,10 +38,10 @@ Instructions: Write a function which takes an array and returns a new array,
 let map = (arr, func) => {
   let result = [];
   for (let x of arr) {
-    if (pred(x) === true) {
-      result.push(x)
-    }
+    value = func(x, result)
+    result.push(value)
   }
+  return result
 };
 
 console.log('map success #1:', _(map([1, 2, 3, 4, 5, 4, 4], plusOne)).isEqual([2, 3, 4, 5, 6, 5, 5]));
@@ -67,7 +67,15 @@ Instructions: Write a function which takes an array and returns the value of
 
 ===================== */
 
-let reduce = (arr, func, initial) => {};
+let reduce = (arr, func, initial) => {
+  let result = []
+  let Initial = parseInt(initial)
+  for(x of arr) {
+    value = func(Initial, result)
+    result.push(value)
+  }
+  return value
+};
 
 console.log('reduce success #1:', reduce([1, 2, 3, 4, 5, 4, 4], add, 0) === 23);
 console.log('reduce success #2:', reduce([1, 2, 3, 4, 5, 4, 4], multiply, 1) === 1920);

@@ -134,7 +134,18 @@ Instructions: Write a function which takes an array and returns the product of
   original array.
 ===================== */
 
-let multiply = (n1, n2) => {};
-let reduceProduct = (arr) => {};
+let multiply = (n1, n2) => {
+  let result = n1 * n2
+  return result
+};
+
+
+let reduceProduct = (arr) => {
+  let product = 1;
+  for (let x of arr) {
+    product = multiply(x, product)
+  }
+  return product
+};
 
 console.log('reduceProduct success:', reduceProduct([1, 2, 3, 4, 5, 4, 4]) === 1920);
