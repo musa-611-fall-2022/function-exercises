@@ -164,7 +164,7 @@ var product = 1 ;
 
 function reduceProduct(array){
   for(i=0; i<array.length; i++){
-    product *= array[i]
+    product = array[i] * product
   }
   return product;
 }

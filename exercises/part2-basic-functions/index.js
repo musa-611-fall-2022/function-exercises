@@ -90,7 +90,7 @@ var firstNumber;
 var secondNumber;
 
 function add (firstNumber,secondNumber){
-    return firstNumber * secondNumber;
+    return firstNumber + secondNumber;
 }
 
 /*numberAdder();*/
