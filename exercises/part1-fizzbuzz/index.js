@@ -18,12 +18,40 @@ Hint 2. Consider how modulo (calculating the remainder of a division problem) mi
 Believe it or not, this is a common programming challenge in job interviews!
 
 ===================== */
+function IfThree(n){
+    if (n % 3 ==0){
+        return "Fizz"
+    } else {
+        return n
+    }
+}
 
-/* =====================
+function IfFive(n){
+    if (n % 5 ==0){
+        return "Buzz"
+    } else {
+        return n
+    }
+}
 
-Start code
 
-===================== */
+let s = '';
+
+for (i = 1; i<101; i++) {
+    if (i % 3 == 0) {
+        if (i % 5 == 0){
+            s += "FizzBuzz" +'\n';
+        } else{
+            s += "Fizz" +'\n';
+        }
+       
+    }
+    else if(i % 5 ==0 ) {
+        s += "Buzz" +'\n';
+    }
+    else {s += i.toString}
+}
+console.log(s);
 
 
 
