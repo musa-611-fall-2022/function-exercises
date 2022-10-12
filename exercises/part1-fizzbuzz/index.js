@@ -53,10 +53,6 @@ let k = 1;
 while(k <=100 ){
     if (k/5 % 1 === 0 && k/3 % 1 ===0) {
         console.log("FizzBuzz");
-    } else if (k/5 % 1 === 0) {
-        console.log("Buzz");
-    } else if (k/3 % 1 === 0) {
-        console.log("Fizz");
     } else {
         console.log(k);
     }
