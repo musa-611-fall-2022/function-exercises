@@ -70,9 +70,9 @@ Instructions: Write a function which takes an array and returns the value of
 let reduce = (arr, func, initial) => {
   let result = initial;
   for(let x of arr) {
-    let value = func(result, x);
-    return result;
+    result = func(result, x);
   }
+  return result;
 };
 
 console.log('reduce success #1:', reduce([1, 2, 3, 4, 5, 4, 4], add, 0) === 23);
