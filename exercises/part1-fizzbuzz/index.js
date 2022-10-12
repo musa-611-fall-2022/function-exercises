@@ -37,14 +37,16 @@ while(i <=100 ){
 
 let j = 1;
 while(j <= 100 ){
-    if (j/5 % 1 === 0 && j/3 % 1 ===0) {
+    if (j/5 % 1 === 0 && j/3 % 1 === 0) {
         console.log(j);
     } else if (j/5 % 1 === 0) {
         console.log("Buzz");
     } else if (j/3 % 1 === 0) {
         console.log("Fizz");
-        j++;
+    } else {
+        console.log(k);
     }
+    j++;
 }
 
 
@@ -52,7 +54,7 @@ while(j <= 100 ){
 // question 3
 let k = 1;
 while(k <=100 ){
-    if (k/5 % 1 === 0 && k/3 % 1 ===0) {
+    if (k/5 % 1 === 0 && k/3 % 1 === 0) {
         console.log("FizzBuzz");
     } else {
         console.log(k);
