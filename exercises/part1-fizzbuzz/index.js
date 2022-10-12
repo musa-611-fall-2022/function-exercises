@@ -36,7 +36,7 @@ while(i <=100 ){
 //question 2
 
 let j = 1;
-if (j/5 % 1 === 0 && k/3 % 1 ===0) {
+if (j/5 % 1 === 0 && j/3 % 1 ===0) {
     console.log(j);
 } else if (j/5 % 1 === 0) {
     console.log("Buzz");
