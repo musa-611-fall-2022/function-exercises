@@ -38,9 +38,9 @@ while(i <=100 ){
 let j = 0;
 while(j <=100 ){
     if (j/3 % 1 === 0) {
-        console.log("fizz");
+        console.log("Fizz");
     } else if (j/5 % 1 === 0) {
-        console.log("buzz");
+        console.log("Buzz");
     } else {
         console.log(j);
     }
@@ -52,11 +52,11 @@ while(j <=100 ){
 let k = 0;
 while(k <=100 ){
     if (k/5 % 1 === 0 && k/3 % 1 ===0) {
-        console.log("fizzbuzz");
+        console.log("FizzBuzz");
     } else if (k/5 % 1 === 0) {
-        console.log("buzz");
+        console.log("Buzz");
     } else if (k/3 % 1 === 0) {
-        console.log("fizz");
+        console.log("Fizz");
     } else {
         console.log(k);
     }
