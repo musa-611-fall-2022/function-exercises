@@ -29,7 +29,7 @@ Start code
 let i = 1;
 while(i <=100 ){
     console.log(i);
-    return i++;
+    i++;
 }
 
 
@@ -44,7 +44,7 @@ while(j <=100 ){
     } else {
         console.log(j);
     }
-    return j++;
+    j++;
 }
 
 
@@ -60,7 +60,7 @@ while(k <=100 ){
     } else {
         console.log(k);
     }
-    return k++;
+    k++;
 }
 
 
