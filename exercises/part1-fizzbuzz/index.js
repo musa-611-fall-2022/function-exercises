@@ -44,7 +44,7 @@ while(j <= 100 ){
     } else if (j/3 % 1 === 0) {
         console.log("Fizz");
     } else {
-        console.log(k);
+        console.log(j);
     }
     j++;
 }
