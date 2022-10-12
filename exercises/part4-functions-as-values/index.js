@@ -70,8 +70,8 @@ Instructions: Write a function which takes an array and returns the value of
 let reduce = (arr, func, initial) => {
   let result = initial;
   for(let x of arr) {
-    let value = func(result, x)
-    return result
+    let value = func(result, x);
+    return result;
   }
 };
 
