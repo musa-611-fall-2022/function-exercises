@@ -26,16 +26,16 @@ Start code
 ===================== */
 
 // question 1
-let i = 0;
+let i = 1;
 while(i <=100 ){
     console.log(i);
-    i++;
+    return i++;
 }
 
 
 //question 2
 
-let j = 0;
+let j = 1;
 while(j <=100 ){
     if (j/3 % 1 === 0) {
         console.log("Fizz");
@@ -44,12 +44,12 @@ while(j <=100 ){
     } else {
         console.log(j);
     }
-    j++;
+    return j++;
 }
 
 
 // question 3
-let k = 0;
+let k = 1;
 while(k <=100 ){
     if (k/5 % 1 === 0 && k/3 % 1 ===0) {
         console.log("FizzBuzz");
@@ -60,7 +60,7 @@ while(k <=100 ){
     } else {
         console.log(k);
     }
-    k++;
+    return k++;
 }
 
 
