@@ -26,41 +26,41 @@ Start code
 ===================== */
 
 // question 1
-let i = 0
+let i = 0;
 while(i <=100 ){
-    console.log(i)
-    i++
+    console.log(i);
+    i++;
 }
 
 
 //question 2
 
-let i = 0
-while(i <=100 ){
-    if (i/3 % 1 === 0) {
-        console.log("fizz")
-    } else if (i/5 % 1 === 0) {
-        console.log("buzz")
+let j = 0;
+while(j <=100 ){
+    if (j/3 % 1 === 0) {
+        console.log("fizz");
+    } else if (j/5 % 1 === 0) {
+        console.log("buzz");
     } else {
-        console.log(i)
+        console.log(j);
     }
-    i++
+    j++;
 }
 
 
 // question 3
-let i = 0
-while(i <=100 ){
-    if (i/5 % 1 === 0 && i/3 % 1 ===0) {
-        console.log("fizzbuzz")
-    } else if (i/5 % 1 === 0) {
-        console.log("buzz")
-    } else if (i/3 % 1 === 0) {
-        console.log("fizz") 
+let k = 0;
+while(k <=100 ){
+    if (k/5 % 1 === 0 && k/3 % 1 ===0) {
+        console.log("fizzbuzz");
+    } else if (k/5 % 1 === 0) {
+        console.log("buzz");
+    } else if (k/3 % 1 === 0) {
+        console.log("fizz");
     } else {
-        console.log(i)
+        console.log(k);
     }
-    i++
+    k++;
 }
 
 

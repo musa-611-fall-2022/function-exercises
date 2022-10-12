@@ -79,7 +79,7 @@ let mapIncrement = (arr) => {
   let increase = arr.map(number => {
     return plusOne(number);
   });
-  return increase
+  return increase;
 };
 
 console.log('mapIncrement success:', _(mapIncrement([1, 2, 3, 4, 5, 4, 4])).isEqual([2, 3, 4, 5, 6, 5, 5]));
@@ -100,7 +100,7 @@ let mapTriple = (arr) => {
   let increase = arr.map(number => {
     return timesThree(number);
   });
-  return increase
+  return increase;
 };
 
 console.log('mapTriple success:', _(mapTriple([1, 2, 3, 4, 5, 4, 4])).isEqual([3, 6, 9, 12, 15, 12, 12]));
@@ -114,15 +114,15 @@ Instructions: Write a function which takes an array and returns the sum of all
 
 let add = (n1, n2) => {
   let result = n1 + n2;
-  return result
+  return result;
 };
 
 let reduceSum = (arr) => {
   let sum = 0;
   for (let x of arr) {
-    sum = add(x, sum)
+    sum = add(x, sum);
   }
-  return sum
+  return sum;
 };
 
 console.log('reduceSum success:', reduceSum([1, 2, 3, 4, 5, 4, 4]) === 23);
@@ -135,17 +135,17 @@ Instructions: Write a function which takes an array and returns the product of
 ===================== */
 
 let multiply = (n1, n2) => {
-  let result = n1 * n2
-  return result
+  let result = n1 * n2;
+  return result;
 };
 
 
 let reduceProduct = (arr) => {
   let product = 1;
   for (let x of arr) {
-    product = multiply(x, product)
+    product = multiply(x, product);
   }
-  return product
+  return product;
 };
 
 console.log('reduceProduct success:', reduceProduct([1, 2, 3, 4, 5, 4, 4]) === 1920);

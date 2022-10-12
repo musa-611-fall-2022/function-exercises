@@ -14,8 +14,8 @@ Example: "age(2000) should return 22"
 ===================== */
 
 let age = (birthYear) => {
-    let result = 2022 - birthYear
-    return result
+    let result = 2022 - birthYear;
+    return result;
 };
 
 console.log('age success:', age(1971) === 51);
@@ -51,7 +51,7 @@ Example: "add(2, 3) should return 5"
 
 let add = (a, b) => {
     let result = a + b;
-    return result
+    return result;
 };
 
 console.log('add success:', add(4, 6) === 10);
@@ -75,7 +75,7 @@ Example: "valueAtIndex(['Mercury', 'Venus', 'Earth', 'Mars'], 2) should return '
 
 let valueAtIndex = (Index, Value) => {
     let result = Index[Value];
-    return result
+    return result;
 };
 
 console.log('valueAtIndex success:', valueAtIndex([9, 8, 7, 6, 5], 2) === 7);
