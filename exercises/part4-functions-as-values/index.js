@@ -1,3 +1,11 @@
+/*
+ * @Author: miaomiao612 dddoctorr612@gmail.com
+ * @Date: 2022-10-02 00:31:31
+ * @LastEditors: miaomiao612 dddoctorr612@gmail.com
+ * @LastEditTime: 2022-10-15 05:48:29
+ * @FilePath: \function-exercises\exercises\part4-functions-as-values\index.js
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+ */
 /* globals _, plusOne, timesThree, add, multiply, isEven, isOdd */
 /* eslint no-unused-vars:off */
 
@@ -17,7 +25,17 @@ Instructions: Write a function which takes an array and returns a new array,
   on whether the item satisfies some condition).
 ===================== */
 
-let filter = (arr, pred) => {};
+
+
+let filter = (arr, pred) => {
+  let result = [];
+  for (let x of arr) {
+    if (pred(x) === true) {
+      result.push(x);
+    }
+  }
+    return result;
+};
 
 console.log('filter success #1:', _(filter([1, 2, 3, 4, 5, 4, 4], isEven)).isEqual([2, 4, 4, 4]));
 console.log('filter success #2:', _(filter([1, 2, 3, 4, 5, 4, 4], isOdd)).isEqual([1, 3, 5]));
@@ -27,7 +45,14 @@ Instructions: Write a function which takes an array and returns a new array,
   where each item has a function applied to it.
 ===================== */
 
-let map = (arr, func) => {};
+
+let map = (arr, func) => {
+  let newarr = [];
+  for(let j = 0; j < arr.length; j++) {
+    newarr[j]=func(arr[j]);
+  }
+  return newarr;
+};
 
 console.log('map success #1:', _(map([1, 2, 3, 4, 5, 4, 4], plusOne)).isEqual([2, 3, 4, 5, 6, 5, 5]));
 console.log('map success #2:', _(map([1, 2, 3, 4, 5, 4, 4], timesThree)).isEqual([3, 6, 9, 12, 15, 12, 12]));
@@ -43,16 +68,29 @@ Instructions: Write a function which takes an array and returns the value of
   For example, if our reducer is the `add` function and we use an initial value
   of 0, the result of `reduce([1, 3, 5, 7], add, 0)` would be:
 
-         initial     current     returns
-         -------     -------     -------
+        initial     current     returns
+        -------     -------     -------
     add(    0     ,     1   ); //   1
     add(    1     ,     3   ); //   4
     add(    4     ,     5   ); //   9
     add(    9     ,     7   ); //   16  <-- final reduced value
 
 ===================== */
-
-let reduce = (arr, func, initial) => {};
+let reverse = (arr)=>{
+  let arr2=new Array();
+  for(let i=0,j=arr.length-1; i<arr.length; i++,j--)
+  {
+        arr2[i]=arr[j];
+  }
+  return arr2;
+}
+let reduce = (arr, func, initial) => {
+  for(let i=0;i<arr.length;i++)
+  {
+    initial=func(initial,arr[i]);
+  }
+  return initial;
+};
 
 console.log('reduce success #1:', reduce([1, 2, 3, 4, 5, 4, 4], add, 0) === 23);
 console.log('reduce success #2:', reduce([1, 2, 3, 4, 5, 4, 4], multiply, 1) === 1920);
@@ -65,6 +103,13 @@ Bonus: Create a function called sumSquares that takes an array and returns
   `multiply` functions that you developed before).
 ===================== */
 
-let sumSquares = (arr) => {};
+let sumSquares = (arr) => {
+  let sum=0;
+
+  for(let i=0;i<arr.length;i++){
+    sum=sum+arr[i]*arr[i];
+  }
+  return sum;
+};
 
 console.log('sumSquares success:', sumSquares([1, 2, 3, 4]) === 30);
