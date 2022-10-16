@@ -42,9 +42,9 @@ for (let i = 1; i<= 100; i++){
 // Step 2: Update the program so that, for multiples of three, it prints "Fizz" instead of the number and, for multiples of five, it prints "Buzz" instead of the number.
 for (let i = 1; i<= 100; i++){
     if (i % 3 == 0) {
-        console.log('Fizz');
+        console.log("Fizz");
     } else if (i% 5 == 0) {
-        console.log('Buzz');
+        console.log("Buzz");
     } else {
         console.log(i);
     }
@@ -53,7 +53,7 @@ for (let i = 1; i<= 100; i++){
     // Step 3: For numbers which are multiples of *both* three and five, make the program print "FizzBuzz" instead of "Fizz" or "Buzz".
     for (let i = 1; i<= 100; i++){
         if (i % 3 == 0 && i % 5 == 0) {
-            console.log('FizzBuzz');
+            console.log("FizzBuzz");
         } else {
             console.log(i);
         }
