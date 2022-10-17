@@ -43,9 +43,9 @@ let isEven = (n) => {
   }
 };
 
-let evenArr = [];
 
 let filterEven = (arr) => {
+  const evenArr = [];
    for( let i=0; i<arr.length; i+=1) {
     if(isEven(arr[i]) == true)
     {evenArr.push(arr[i])}
@@ -69,9 +69,8 @@ let isOdd = (n) => {
   }
 };
 
-let oddArr = [];
-
 let filterOdd = (arr) => {
+  const oddArr = [];
   for( let i=0; i<arr.length; i+=1) {
    if(isOdd(arr[i]) == true)
    {oddArr.push(arr[i])}
@@ -92,8 +91,8 @@ let plusOne = n => {
   return n + 1;
 };
 
-let plusOneArr = [];
 let mapIncrement =(arr) => {
+  const plusOneArr = [];
   for( let i=0; i<arr.length; i+=1) {
    plusOneArr.push(plusOne(arr[i]));
  } return plusOneArr;
@@ -110,9 +109,8 @@ Instructions: Write a function which takes an array and returns a new array with
 
 let timesThree = (n) => { return n*3 };
 
-let timesThreeArr = [];
-
 let mapTriple =(arr) => {
+  const timesThreeArr = [];
   for(let i=0; i<arr.length; i+=1) {
    timesThreeArr.push(timesThree(arr[i]));
  } return timesThreeArr;
@@ -129,8 +127,9 @@ Instructions: Write a function which takes an array and returns the sum of all
 
 let add = (num1, num2) => { return num1 + num2};
 
-let sum = 0;
+
 let reduceSum = (arr) => {
+  let sum = 0;
   for(let i=0; i<arr.length; i+=1) {
       sum = add(sum, arr[i]);
   } return sum;
@@ -147,8 +146,8 @@ Instructions: Write a function which takes an array and returns the product of
 
 let multiply = (num1, num2) => { return num1*num2 };
 
-let product = 1;
 let reduceProduct = (arr) => {
+  let product = 1;
   for(let i=0; i<arr.length; i+=1) {
       product = multiply(product, arr[i]);
   } return product;
