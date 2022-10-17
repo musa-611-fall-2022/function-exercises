@@ -15,7 +15,6 @@ Functions that `return` can be passed as values to other functions. Each exercis
 Instructions: Write a function which counts the number of times a value occurs in an array
 Example: countItem(['a', 'b', 'a'], 'a') should return 2
 ===================== */
-const arr = [1, 2, 3, 4, 5, 4, 4];
 
 let countItem = (arr, item) => {
   let count = 0;
