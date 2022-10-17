@@ -47,7 +47,7 @@ let isEven = (n) => {
 let evenArr = [];
 
 let filterEven = (arr) => {
-   for( let i=0; i<arr.length; i++) {
+   for( let i=0; i<arr.length; i+=1) {
     if(isEven(arr[i]) == true)
     {evenArr.push(arr[i])}
    }
@@ -73,7 +73,7 @@ let isOdd = (n) => {
 let oddArr = [];
 
 let filterOdd = (arr) => {
-  for( let i=0; i<arr.length; i++) {
+  for( let i=0; i<arr.length; i+=1) {
    if(isOdd(arr[i]) == true)
    {oddArr.push(arr[i])}
   }
@@ -95,7 +95,7 @@ let plusOne = n => {
 
 let plusOneArr = [];
 let mapIncrement =(arr) => {
-  for( let i=0; i<arr.length; i++) {
+  for( let i=0; i<arr.length; i+=1) {
    plusOneArr.push(plusOne(arr[i]));
  } return plusOneArr;
 };
@@ -114,7 +114,7 @@ let timesThree = (n) => { return n*3 };
 let timesThreeArr = [];
 
 let mapTriple =(arr) => {
-  for(let i=0; i<arr.length; i++) {
+  for(let i=0; i<arr.length; i+=1) {
    timesThreeArr.push(timesThree(arr[i]));
  } return timesThreeArr;
 };
@@ -132,7 +132,7 @@ let add = (num1, num2) => { return num1 + num2};
 
 let sum = 0;
 let reduceSum = (arr) => {
-  for(let i=0; i<arr.length; i++) {
+  for(let i=0; i<arr.length; i+=1) {
       sum = add(sum, arr[i]);
   } return sum;
 };
@@ -150,7 +150,7 @@ let multiply = (num1, num2) => { return num1*num2 };
 
 let product = 1;
 let reduceProduct = (arr) => {
-  for(let i=0; i<arr.length; i++) {
+  for(let i=0; i<arr.length; i+=1) {
       product = multiply(product, arr[i]);
   } return product;
 };
