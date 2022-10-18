@@ -1,3 +1,11 @@
+/*
+ * @Author: miaomiao612 dddoctorr612@gmail.com
+ * @Date: 2022-10-02 00:31:31
+ * @LastEditors: miaomiao612 dddoctorr612@gmail.com
+ * @LastEditTime: 2022-10-06 00:48:18
+ * @FilePath: \function-exercises\exercises\part1-fizzbuzz\index.js
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+ */
 /* =====================
 
 # Exercise: FizzBuzz
@@ -24,7 +32,18 @@ Believe it or not, this is a common programming challenge in job interviews!
 Start code
 
 ===================== */
-
+let output='';
+for (let i=1;i<=100;i++)
+{   if (i % 3==0 && i % 5==0)
+    {output+="FizzBuzz\n"}
+    else if (i % 3==0)
+    {output+="Fizz\n"}
+    else if (i % 5==0)
+    {output+="Buzz\n"}
+    else
+    {output=output+i.toString()+'\n'}
+}
+console.log(output);
 
 
 
