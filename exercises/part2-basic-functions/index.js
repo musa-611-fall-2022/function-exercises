@@ -13,8 +13,7 @@ in years. (Let's just assume this person was born January 1 at 12:01 AM)
 Example: "age(2000) should return 22"
 ===================== */
 
-let age = (birthYear) => {};
-
+const age = (birthYear, currentYear = 2022) => currentYear - birthYear;
 console.log('age success:', age(1971) === 51);
 
 /* =====================
@@ -22,67 +21,77 @@ Instructions: Write a function that adds one to the number provided
 Example: "plusOne(2) should return 3"
 ===================== */
 
-let plusOne = () => {};
-
+const plusOne = (otherNumber, numberOne = 1) => numberOne + otherNumber;
 console.log('plusOne success:', plusOne(99) === 100);
 
-/* =====================
-Instructions: Write a function that multiplies the number provided by three
-Example: "timesThree(2) should return 6"
-===================== */
+// /* =====================
+// Instructions: Write a function that multiplies the number provided by three
+// Example: "timesThree(2) should return 6"
+// ===================== */
 
-let timesThree = () => {};
-
+let timesThree = (byThree, numberThree = 3) => byThree * numberThree;
 console.log('timesThree success:', timesThree(33) === 99);
 
-/* =====================
-Instructions: Write a function that adds two given numbers
-Example: "add(2, 3) should return 5"
-===================== */
+// /* =====================
+// Instructions: Write a function that adds two given numbers
+// Example: "add(2, 3) should return 5"
+// ===================== */
 
-let add = () => {};
-
+let add = (param1, param2) => param1 + param2;
 console.log('add success:', add(4, 6) === 10);
 
-/* =====================
-Instructions: Write a function that multiplies two given numbers
-Example: "multiply(2, 3) should return 6"
-===================== */
+// /* =====================
+// Instructions: Write a function that multiplies two given numbers
+// Example: "multiply(2, 3) should return 6"
+// ===================== */
 
-let multiply = () => {};
-
+let multiply = (multiply1, multiply2) => multiply1 * multiply2;
 console.log('multiply success:', multiply(4, 6) === 24);
 
-/* =====================
-Instructions: "Write a function that returns the value of an array at a specified index"
-Example: "valueAtIndex(['Mercury', 'Venus', 'Earth', 'Mars'], 2) should return 'Earth'"
-===================== */
+// /* =====================
+// Instructions: "Write a function that returns the value of an array at a specified index"
+// Example: "valueAtIndex(['Mercury', 'Venus', 'Earth', 'Mars'], 2) should return 'Earth'"
+// ===================== */
 
-let valueAtIndex = () => {};
+let valueAtIndex = (array, index) => {
+    return array[index]
+};
 
 console.log('valueAtIndex success:', valueAtIndex([9, 8, 7, 6, 5], 2) === 7);
 
-/* =====================
-Instructions: "Write a function that returns the value of an object at a specified key"
-Example: "valueAtKey({'name': 'Nathan'}, 'name') should return 'Nathan'"
-===================== */
+// /* =====================
+// Instructions: "Write a function that returns the value of an object at a specified key"
+// Example: "valueAtKey({'name': 'Nathan'}, 'name') should return 'Nathan'"
+// ===================== */
 
-let valueAtKey = () => {};
+let valueAtKey = (object, key) => {
+   return object[key]
+};
 
 console.log('valueAtKey success:', valueAtKey({ 'foo': 'bar' }, 'foo') === 'bar');
 
-/* =====================
-Instructions: Write a function that returns true if a number is even.
-===================== */
+// /* =====================
+// Instructions: Write a function that returns true if a number is even.
+// ===================== */
 
-let isEven = () => {};
+let isEven = (number) => {
+    if(number % 2 == 0){
+        return true
+    }
+    return false
+};
 
 console.log('isEven success:', isEven(2) === true && isEven(3) === false);
 
-/* =====================
-Instructions: Write a function that returns true if a number is odd.
-===================== */
+// /* =====================
+// Instructions: Write a function that returns true if a number is odd.
+// ===================== */
 
-let isOdd = () => {};
+let isOdd = (number1) => {
+    if(number1 % 2 != 0){
+        return true
+    }
+    return false
+};
 
 console.log('isOdd success:', isOdd(4) === false && isOdd(5) === true);
