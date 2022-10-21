@@ -120,7 +120,8 @@ Instructions: Write a function which takes an array and returns the sum of all
 let add = (param1, param2) => param1 + param2;
 
 let reduceSum = (arr) => {
-  return arr.reduce(param1,param2)
+  const sum = arr.reduce(add,0)
+  return sum
 };
 
 console.log('reduceSum success:', reduceSum([1, 2, 3, 4, 5, 4, 4]) === 23);
@@ -133,7 +134,11 @@ Instructions: Write a function which takes an array and returns the product of
   original array.
 ===================== */
 
-// let multiply = (n1, n2) => {};
-// let reduceProduct = (arr) => {};
+let multiply = (multiply1, multiply2) => multiply1 * multiply2;
 
-// console.log('reduceProduct success:', reduceProduct([1, 2, 3, 4, 5, 4, 4]) === 1920);
+let reduceProduct = (arr) => {
+  const product = arr.reduce(multiply,1)
+  return product
+};
+
+console.log('reduceProduct success:', reduceProduct([1, 2, 3, 4, 5, 4, 4]) === 1920);
