@@ -68,20 +68,12 @@ Instructions: Write a function which takes an array and returns the value of
 
 ===================== */
 
-// let reduce = (arr, func, initial) => {
-//   let newArr = []
-//   // newArr.push(func(arr))
-//   const test = arr.forEach(element => {
-//     newArr.push(func(element))
-//   });
-//   // for(let i=0; i < arr.length; i++){
-//   //   newArr.push(func(arr))
-//   // }
-// };
-
 let reduce = (arr, func, initial) => {
-  let reducer = arr.reduce(func, initial);
-  return reducer;
+  let total = initial;
+  for(let num of arr) {
+    total = func(total, num)
+  }
+  return total
 };
 
 console.log('reduce success #1:', reduce([1, 2, 3, 4, 5, 4, 4], add, 0) === 23);
