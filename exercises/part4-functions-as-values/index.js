@@ -71,9 +71,9 @@ Instructions: Write a function which takes an array and returns the value of
 let reduce = (arr, func, initial) => {
   let total = initial;
   for(let num of arr) {
-    total = func(total, num)
+    total = func(total, num);
   }
-  return total
+  return total;
 };
 
 console.log('reduce success #1:', reduce([1, 2, 3, 4, 5, 4, 4], add, 0) === 23);
