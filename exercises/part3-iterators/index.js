@@ -21,10 +21,10 @@ let countItem = (arr, item) => {
   let counter = 0;
   for(let i = 0; i < arr.length; i++) {
     if (arr[i] == item) {
-      counter++
+      counter++;
     }
   }
-  return counter
+  return counter;
 };
 
 console.log('countItem success:', countItem([1, 2, 3, 4, 5, 4, 4], 4) === 3);
@@ -38,19 +38,19 @@ Instructions: Write a function which takes an array and returns a new array with
 
 let isEven = (number) => {
   if(number % 2 == 0){
-      return true
+      return true;
   }
-  return false
+  return false;
 };
 
 let filterEven = (arr) => {
-  let newArr = []
+  let newArr = [];
   for(let i = 0; i < arr.length; i++) {
     if (isEven(arr[i])) {
-      newArr.push(arr[i])
+      newArr.push(arr[i]);
     }
   }
-  return newArr
+  return newArr;
 };
 
 // let filterEven = (arr) => {
@@ -69,19 +69,19 @@ Instructions: Write a function which takes an array and returns a new array with
 
 let isOdd = (number1) => {
   if(number1 % 2 != 0){
-      return true
+      return true;
   }
-  return false
+  return false;
 };
 
 let filterOdd = (arr) => {
-  let newArr = []
+  let newArr = [];
   for(let i = 0; i < arr.length; i++) {
     if (isOdd(arr[i])) {
-      newArr.push(arr[i])
+      newArr.push(arr[i]);
     }
   }
-  return newArr
+  return newArr;
 };
 
 console.log('filterOdd success:', _(filterOdd([1, 2, 3, 4, 5, 4, 4])).isEqual([1, 3, 5]));
@@ -96,7 +96,7 @@ Instructions: Write a function which takes an array and returns a new array with
 let plusOne = (otherNumber, numberOne = 1) => numberOne + otherNumber;
 
 let mapIncrement = (arr) => {
-  return arr.map(num => plusOne(num))
+  return arr.map(num => plusOne(num));
 };
 
 console.log('mapIncrement success:', _(mapIncrement([1, 2, 3, 4, 5, 4, 4])).isEqual([2, 3, 4, 5, 6, 5, 5]));
@@ -111,7 +111,7 @@ Instructions: Write a function which takes an array and returns a new array with
 let timesThree = (byThree, numberThree = 3) => byThree * numberThree;
 
 let mapTriple = (arr) => {
-  return arr.map(num => timesThree(num))
+  return arr.map(num => timesThree(num));
 };
 
 console.log('mapTriple success:', _(mapTriple([1, 2, 3, 4, 5, 4, 4])).isEqual([3, 6, 9, 12, 15, 12, 12]));
@@ -126,8 +126,8 @@ Instructions: Write a function which takes an array and returns the sum of all
 let add = (param1, param2) => param1 + param2;
 
 let reduceSum = (arr) => {
-  const sum = arr.reduce(add,0)
-  return sum
+  const sum = arr.reduce(add, 0);
+  return sum;
 };
 
 console.log('reduceSum success:', reduceSum([1, 2, 3, 4, 5, 4, 4]) === 23);
@@ -143,8 +143,8 @@ Instructions: Write a function which takes an array and returns the product of
 let multiply = (multiply1, multiply2) => multiply1 * multiply2;
 
 let reduceProduct = (arr) => {
-  const product = arr.reduce(multiply,1)
-  return product
+  const product = arr.reduce(multiply, 1);
+  return product;
 };
 
 console.log('reduceProduct success:', reduceProduct([1, 2, 3, 4, 5, 4, 4]) === 1920);

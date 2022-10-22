@@ -17,9 +17,16 @@ Instructions: Write a function which takes an array and returns a new array,
   on whether the item satisfies some condition).
 ===================== */
 
+//  return arr.filter(num => pred(num))
 
 let filter = (arr, pred) => {
- return arr.filter(num => pred(num))
+  let newArr = [];
+  for (let i = 0; i < arr.length; i++) {
+    if (pred(arr[i])) {
+      newArr.push(arr[i]);
+    }
+  }
+  return newArr;
 };
 
 console.log('filter success #1:', _(filter([1, 2, 3, 4, 5, 4, 4], isEven)).isEqual([2, 4, 4, 4]));
@@ -31,7 +38,11 @@ Instructions: Write a function which takes an array and returns a new array,
 ===================== */
 
 let map = (arr, func) => {
-  return arr.map(num => func(num))
+  let newArr = [];
+  for (let i=0; i < arr.length; i++) {
+    newArr.push(func(arr[i]));
+  }
+  return newArr;
 };
 
 console.log('map success #1:', _(map([1, 2, 3, 4, 5, 4, 4], plusOne)).isEqual([2, 3, 4, 5, 6, 5, 5]));
@@ -57,8 +68,20 @@ Instructions: Write a function which takes an array and returns the value of
 
 ===================== */
 
+// let reduce = (arr, func, initial) => {
+//   let newArr = []
+//   // newArr.push(func(arr))
+//   const test = arr.forEach(element => {
+//     newArr.push(func(element))
+//   });
+//   // for(let i=0; i < arr.length; i++){
+//   //   newArr.push(func(arr))
+//   // }
+// };
+
 let reduce = (arr, func, initial) => {
-  return arr.reduce(func,initial)
+  let reducer = arr.reduce(func, initial);
+  return reducer;
 };
 
 console.log('reduce success #1:', reduce([1, 2, 3, 4, 5, 4, 4], add, 0) === 23);
@@ -74,9 +97,9 @@ Bonus: Create a function called sumSquares that takes an array and returns
 
 
 let sumSquares = (arr) => {
-  const square = arr.map(num => num * num)
-  const sum = square.reduce( (prevNumber, currentNumber) =>  prevNumber + currentNumber, 0)
-  return sum
+  const square = arr.map(num => num * num);
+  const sum = square.reduce( (prevNumber, currentNumber) =>  prevNumber + currentNumber, 0);
+  return sum;
 };
 
 console.log('sumSquares success:', sumSquares([1, 2, 3, 4]) === 30);

@@ -54,7 +54,7 @@ console.log('multiply success:', multiply(4, 6) === 24);
 // ===================== */
 
 let valueAtIndex = (array, index) => {
-    return array[index]
+    return array[index];
 };
 
 console.log('valueAtIndex success:', valueAtIndex([9, 8, 7, 6, 5], 2) === 7);
@@ -65,7 +65,7 @@ console.log('valueAtIndex success:', valueAtIndex([9, 8, 7, 6, 5], 2) === 7);
 // ===================== */
 
 let valueAtKey = (object, key) => {
-   return object[key]
+   return object[key];
 };
 
 console.log('valueAtKey success:', valueAtKey({ 'foo': 'bar' }, 'foo') === 'bar');
@@ -76,9 +76,9 @@ console.log('valueAtKey success:', valueAtKey({ 'foo': 'bar' }, 'foo') === 'bar'
 
 let isEven = (number) => {
     if(number % 2 == 0){
-        return true
+        return true;
     }
-    return false
+    return false;
 };
 
 console.log('isEven success:', isEven(2) === true && isEven(3) === false);
@@ -89,9 +89,9 @@ console.log('isEven success:', isEven(2) === true && isEven(3) === false);
 
 let isOdd = (number1) => {
     if(number1 % 2 != 0){
-        return true
+        return true;
     }
-    return false
+    return false;
 };
 
 console.log('isOdd success:', isOdd(4) === false && isOdd(5) === true);
