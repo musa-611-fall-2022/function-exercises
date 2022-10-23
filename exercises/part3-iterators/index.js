@@ -169,7 +169,7 @@ function multiply (firstNumber, secondNumber){
 function reduceProduct(array){
   let product = 1 ;
   for(let i=0; i<array.length; i++){
-    product = multiply(array[i], product)
+    product = multiply(array[i], product);
   }
   return product;
 }
