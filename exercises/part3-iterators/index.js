@@ -16,9 +16,9 @@ Instructions: Write a function which counts the number of times a value occurs i
 Example: countItem(['a', 'b', 'a'], 'a') should return 2
 ===================== */
 
-function countItem(array,value){
-  var n = 0;
-  for(i = 0; i < array.length; i++){
+function countItem(array, value){
+  let n = 0;
+  for(let i = 0; i < array.length; i++){
       if(array[i] == value){n++}
   }
   return n;
@@ -42,10 +42,11 @@ function isEven(number){
   }
 }
 
-let evenArray = [];
+
 
 function filterEven(array){
-  for(i=0; i<array.length; i++){
+  let evenArray = [];
+  for(let i=0; i<array.length; i++){
     if(isEven(array[i]) == true)
     {evenArray.push(array[i])}
   }
@@ -68,10 +69,9 @@ function isOdd(number){
   }
 }
 
-let oddArray = [];
-
 function filterOdd(array){
-  for(i=0; i<array.length; i++){
+  let oddArray = [];
+  for(let i=0; i<array.length; i++){
     if(isOdd(array[i]) == true)
     {oddArray.push(array [i])}
   }
@@ -92,10 +92,9 @@ function plusOne (number){
   return number + 1;
 }
 
-mappedArray = [];
-
 function mapIncrement(array){
-  for(i=0; i<array.length; i++){
+  let mappedArray = [];
+  for(let i=0; i<array.length; i++){
     mappedArray.push(plusOne(array[i]));
   }
   return mappedArray;
@@ -116,10 +115,10 @@ function timesThree (number){
   return number * 3;
 }
 
-mappedArray = [];
 
 function mapTriple(array){
-  for(i=0; i<array.length; i++){
+  let mappedArray = [];
+  for(let i=0; i<array.length; i++){
     mappedArray.push(timesThree(array[i]));
   }
   return mappedArray;
@@ -136,15 +135,16 @@ Instructions: Write a function which takes an array and returns the sum of all
   array.
 ===================== */
 
-function add (firstNumber,secondNumber){
+function add (firstNumber, secondNumber){
   return firstNumber + secondNumber;
 }
 
-var sum=0;
+
 
 function reduceSum(array){
-  for(i=0; i<array.length; i++){
-    sum += array[i]
+  let sum=0;
+  for(let i=0; i<array.length; i++){
+    sum += array[i];
   }
   return sum;
 }
@@ -160,11 +160,12 @@ Instructions: Write a function which takes an array and returns the product of
   original array.
 ===================== */
 
-var product = 1 ;
+
 
 function reduceProduct(array){
-  for(i=0; i<array.length; i++){
-    product = array[i] * product
+  let product = 1 ;
+  for(let i=0; i<array.length; i++){
+    product = array[i] * product;
   }
   return product;
 }

@@ -16,7 +16,6 @@ Instructions: Write a function which takes an array and returns a new array,
   function that takes one item as input and returns either true or false based
   on whether the item satisfies some condition).
 ===================== */
-resultsArray = [];
 
 // Function containing logic for filtering out odd numbers
 
@@ -59,7 +58,7 @@ function timesThree (number){
 let map = (arr, func) => {
   let mappedArr=[];
   for (let i = 0; i < arr.length; i++) {
-   mappedArr.push(func(arr[i]))
+   mappedArr.push(func(arr[i]));
   }
   return mappedArr;
 };
@@ -88,31 +87,31 @@ Instructions: Write a function which takes an array and returns the value of
 ===================== */
 
 
-function add(arr,initial){
+function add(arr, initial){
   console.log("calling add");
-  result = initial;
+  let result = initial;
   console.log("setting result to: " + initial);
-  for(i=0; i<arr.length; i++){
+  for(let i=0; i<arr.length; i++){
     console.log("iteration -----------------" + i);
-    console.log("current result: " + result )
+    console.log("current result: " + result );
     result = arr[i] + result;
     console.log("new result: " + result);
   }
 
   console.log("Final result: " + result);
   return result;
-};
+}
 
-function multiply(arr,initial){
-  result = initial;
-  for(i=0; i<arr.length; i++){
-    result = arr[i] * result;
+function multiply(arr, initial){
+  let result = initial;
+  for(let i=0; i<arr.length; i++){
+    let result = arr[i] * initial;
   }
   return result;
-};
+}
 
 let reduce = (arr, func, initial) => {
-  result = func(arr,initial);
+  let result = func(arr, initial);
   return result;
 };
 
