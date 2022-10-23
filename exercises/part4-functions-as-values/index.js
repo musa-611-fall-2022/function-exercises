@@ -105,7 +105,7 @@ function add(arr, initial){
 function multiply(arr, initial){
   let result = initial;
   for(let i=0; i<arr.length; i++){
-    let result = arr[i] * initial;
+    result = arr[i] * result;
   }
   return result;
 }
@@ -119,7 +119,7 @@ let reduce = (arr, func, initial) => {
 
 console.log('reduce success #1:', reduce([1, 2, 3, 4, 5, 4, 4], add, 0) === 23);
 console.log('reduce success #2:', reduce([1, 2, 3, 4, 5, 4, 4], multiply, 1) === 1920);
-/*console.log('reduce success #3:', _(reduce([1, 2, 3, 4, 5, 4, 4], (x, y) => [y, ...x], [])).isEqual([4, 4, 5, 4, 3, 2, 1]));*/
+console.log('reduce success #3:', _(reduce([1, 2, 3, 4, 5, 4, 4], (x, y) => [y, ...x], [])).isEqual([4, 4, 5, 4, 3, 2, 1]));
 
 /* =====================
 Bonus: Create a function called sumSquares that takes an array and returns

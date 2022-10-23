@@ -144,7 +144,7 @@ function add (firstNumber, secondNumber){
 function reduceSum(array){
   let sum=0;
   for(let i=0; i<array.length; i++){
-    sum += array[i];
+    sum = add(array[i], sum);
   }
   return sum;
 }
@@ -161,11 +161,15 @@ Instructions: Write a function which takes an array and returns the product of
 ===================== */
 
 
+function multiply (firstNumber, secondNumber){
+  return firstNumber * secondNumber;
+}
+
 
 function reduceProduct(array){
   let product = 1 ;
   for(let i=0; i<array.length; i++){
-    product = array[i] * product;
+    product = multiply(array[i], product)
   }
   return product;
 }
