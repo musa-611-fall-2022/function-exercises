@@ -12,12 +12,24 @@ and reduce.
 
 /* =====================
 Instructions: Write a function which takes an array and returns a new array,
-  filtered according to a "predicate" that you procide (a predicate is a
+  filtered according to a "predicate" that you provide (a predicate is a
   function that takes one item as input and returns either true or false based
   on whether the item satisfies some condition).
 ===================== */
 
-let filter = (arr, pred) => {};
+let filter = (arr, pred) => {
+  arrFilter = []
+  index = 0
+  for (let i = 0; i < arr.length; i++){
+    if (pred(arr[i])){
+      arrFilter[index] = arr[i]
+      index = index + 1
+    } else {
+      arrFilter = arrFilter
+    }
+  }
+  return arrFilter
+};
 
 console.log('filter success #1:', _(filter([1, 2, 3, 4, 5, 4, 4], isEven)).isEqual([2, 4, 4, 4]));
 console.log('filter success #2:', _(filter([1, 2, 3, 4, 5, 4, 4], isOdd)).isEqual([1, 3, 5]));
