@@ -87,7 +87,7 @@ Instructions: Write a function which takes an array and returns the value of
 ===================== */
 
 
-function add(arr, initial){
+/* function add(arr, initial){
   console.log("calling add");
   let result = initial;
   console.log("setting result to: " + initial);
@@ -100,7 +100,7 @@ function add(arr, initial){
 
   console.log("Final result: " + result);
   return result;
-}
+};
 
 function multiply(arr, initial){
   let result = initial;
@@ -108,12 +108,29 @@ function multiply(arr, initial){
     result = arr[i] * result;
   }
   return result;
-}
+};
 
-let reduce = (arr, func, initial) => {
+function reduce (arr, func, initial) {
   let result = func(arr, initial);
   return result;
-};
+};*/
+
+function multiply (firstNumber, secondNumber){
+  return firstNumber * secondNumber;
+}
+
+function add (firstNumber, secondNumber){
+  return firstNumber + secondNumber;
+}
+
+function reduce(arr, func, initial){
+  let result = initial;
+  for(let i=0; i<arr.length; i++){
+    result = func(result, arr[i]);
+    console.log(result);
+  }
+  return result;
+}
 
 
 
