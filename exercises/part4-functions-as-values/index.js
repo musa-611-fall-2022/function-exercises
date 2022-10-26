@@ -17,7 +17,26 @@ Instructions: Write a function which takes an array and returns a new array,
   on whether the item satisfies some condition).
 ===================== */
 
-let filter = (arr, pred) => {};
+// Function containing logic for filtering out odd numbers
+
+function isOdd(x) {
+  return x % 2 != 0;
+}
+
+// Function containing logic for filtering out even numbers
+
+function isEven(x) {
+  return x % 2 === 0;
+}
+
+
+function filter(arr, func) {
+  const filteredArr = [];
+  for (let i = 0; i < arr.length; i++) {
+    func(arr[i]) ?  filteredArr.push(arr[i]) : null;
+  }
+  return filteredArr;
+}
 
 console.log('filter success #1:', _(filter([1, 2, 3, 4, 5, 4, 4], isEven)).isEqual([2, 4, 4, 4]));
 console.log('filter success #2:', _(filter([1, 2, 3, 4, 5, 4, 4], isOdd)).isEqual([1, 3, 5]));
@@ -26,8 +45,23 @@ console.log('filter success #2:', _(filter([1, 2, 3, 4, 5, 4, 4], isOdd)).isEqua
 Instructions: Write a function which takes an array and returns a new array,
   where each item has a function applied to it.
 ===================== */
+function plusOne (number){
+  return number + 1;
+}
 
-let map = (arr, func) => {};
+function timesThree (number){
+  return number * 3;
+}
+
+
+
+let map = (arr, func) => {
+  let mappedArr=[];
+  for (let i = 0; i < arr.length; i++) {
+   mappedArr.push(func(arr[i]));
+  }
+  return mappedArr;
+};
 
 console.log('map success #1:', _(map([1, 2, 3, 4, 5, 4, 4], plusOne)).isEqual([2, 3, 4, 5, 6, 5, 5]));
 console.log('map success #2:', _(map([1, 2, 3, 4, 5, 4, 4], timesThree)).isEqual([3, 6, 9, 12, 15, 12, 12]));
@@ -52,7 +86,53 @@ Instructions: Write a function which takes an array and returns the value of
 
 ===================== */
 
-let reduce = (arr, func, initial) => {};
+
+/* function add(arr, initial){
+  console.log("calling add");
+  let result = initial;
+  console.log("setting result to: " + initial);
+  for(let i=0; i<arr.length; i++){
+    console.log("iteration -----------------" + i);
+    console.log("current result: " + result );
+    result = arr[i] + result;
+    console.log("new result: " + result);
+  }
+
+  console.log("Final result: " + result);
+  return result;
+};
+
+function multiply(arr, initial){
+  let result = initial;
+  for(let i=0; i<arr.length; i++){
+    result = arr[i] * result;
+  }
+  return result;
+};
+
+function reduce (arr, func, initial) {
+  let result = func(arr, initial);
+  return result;
+};*/
+
+function multiply (firstNumber, secondNumber){
+  return firstNumber * secondNumber;
+}
+
+function add (firstNumber, secondNumber){
+  return firstNumber + secondNumber;
+}
+
+function reduce(arr, func, initial){
+  let result = initial;
+  for(let i=0; i<arr.length; i++){
+    result = func(result, arr[i]);
+    console.log(result);
+  }
+  return result;
+}
+
+
 
 console.log('reduce success #1:', reduce([1, 2, 3, 4, 5, 4, 4], add, 0) === 23);
 console.log('reduce success #2:', reduce([1, 2, 3, 4, 5, 4, 4], multiply, 1) === 1920);
