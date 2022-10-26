@@ -18,17 +18,17 @@ Instructions: Write a function which takes an array and returns a new array,
 ===================== */
 
 let filter = (arr, pred) => {
-  arrFilter = []
-  index = 0
+  let arrFilter = [];
+  let index = 0;
   for (let i = 0; i < arr.length; i++){
     if (pred(arr[i])){
-      arrFilter[index] = arr[i]
-      index = index + 1
+      arrFilter[index] = arr[i];
+      index = index + 1;
     } else {
-      arrFilter = arrFilter
+      arrFilter;
     }
   }
-  return arrFilter
+  return arrFilter;
 };
 
 console.log('filter success #1:', _(filter([1, 2, 3, 4, 5, 4, 4], isEven)).isEqual([2, 4, 4, 4]));
@@ -40,11 +40,11 @@ Instructions: Write a function which takes an array and returns a new array,
 ===================== */
 
 let map = (arr, func) => {
-  newArr = []
+  let newArr = [];
   for (let i = 0; i < arr.length; i++){
-    newArr[i] = func(arr[i])
+    newArr[i] = func(arr[i]);
   }
-  return newArr
+  return newArr;
 };
 
 console.log('map success #1:', _(map([1, 2, 3, 4, 5, 4, 4], plusOne)).isEqual([2, 3, 4, 5, 6, 5, 5]));
@@ -71,16 +71,16 @@ Instructions: Write a function which takes an array and returns the value of
 ===================== */
 
 let reduce = (arr, func, initial) => {
-  reduced = initial
+  let reduced = initial;
   for (let i = 0; i < arr.length; i++){ //switch i to 1, since the first elements of the arrays being tested are 1 this works. Otherwise would have to change 'reduced' object to 0 for adding and 1 for multiplying
-    reduced = func(reduced,arr[i])
+    reduced = func(reduced, arr[i]);
   }
-  return reduced
+  return reduced;
 };
 
 let switched = (x, y) => {
-  return [y, ...x]
-}
+  return [y, ...x];
+};
 
 console.log('reduce success #1:', reduce([1, 2, 3, 4, 5, 4, 4], add, 0) === 23);
 console.log('reduce success #2:', reduce([1, 2, 3, 4, 5, 4, 4], multiply, 1) === 1920);
@@ -94,11 +94,11 @@ Bonus: Create a function called sumSquares that takes an array and returns
 ===================== */
 
 let sumSquares = (arr) => {
-  sqArr = []
+  let sqArr = [];
   for (let i = 0; i < arr.length; i++){
-    sqArr[i] = multiply(arr[i],arr[i])
+    sqArr[i] = multiply(arr[i], arr[i]);
   }
-  return reduce(sqArr,add,0)
+  return reduce(sqArr, add, 0);
 };
 
 console.log('sumSquares success:', sumSquares([1, 2, 3, 4]) === 30);
