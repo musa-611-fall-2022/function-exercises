@@ -57,8 +57,8 @@ console.log(fizzbuzz);
 function step3(array){
     let array2 = [];
      for (let i = 0; i < array.length; i++) {
-        mod3 = array[i]%3;
-        mod5 = array[i]%5;
+        let mod3 = array[i]%3;
+        let mod5 = array[i]%5;
         if (mod3 == 0 && mod5 == 0){
             array2[i] = "FizzBuzz";
         } else if (mod3 == 0 && mod5 != 0){
