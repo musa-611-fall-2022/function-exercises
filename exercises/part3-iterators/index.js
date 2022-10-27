@@ -32,8 +32,8 @@ Instructions: Write a function which takes an array and returns a new array with
   original array.
 ===================== */
 
-let isEven = (n) => {if(n%2==0) {return true;}
-else {return false;}
+let isEven = (n) => {if(n%2==0) {return true}
+else {return false}
 };
 let filterEven = (arr) => {
   let arr1=[];
@@ -43,8 +43,6 @@ let filterEven = (arr) => {
     }
       }
       return arr1;
-
-  
 };
 
 console.log('filterEven success:', _(filterEven([1, 2, 3, 4, 5, 4, 4])).isEqual([2, 4, 4, 4]));

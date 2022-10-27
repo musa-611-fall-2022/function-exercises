@@ -69,7 +69,7 @@ Instructions: Write a function which takes an array and returns the value of
 let reduce = (arr, func, initial) => {
   let x=initial;
   for(let num of arr){
-    x=func(x,num);
+    x=func(x, num);
   }
   return x;
 
@@ -88,7 +88,7 @@ Bonus: Create a function called sumSquares that takes an array and returns
 
 let sumSquares = (arr) => {
   const map1=arr.map(x => x*x);
-  const squaresum=map1.reduce((prev,cur)=>prev+cur,0);
+  const squaresum=map1.reduce((prev, cur)=>prev+cur, 0);
   return squaresum;
 };
 

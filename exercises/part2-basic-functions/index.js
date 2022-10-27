@@ -40,7 +40,7 @@ Instructions: Write a function that adds two given numbers
 Example: "add(2, 3) should return 5"
 ===================== */
 
-let add = (addnum1,addnum2) => {return addnum1+addnum2};
+let add = (addnum1, addnum2) => {return addnum1+addnum2};
 
 console.log('add success:', add(4, 6) === 10);
 
@@ -49,7 +49,7 @@ Instructions: Write a function that multiplies two given numbers
 Example: "multiply(2, 3) should return 6"
 ===================== */
 
-let multiply = (mutnum1,mutnum2) => {return mutnum1*mutnum2};
+let multiply = (mutnum1, mutnum2) => {return mutnum1*mutnum2};
 
 console.log('multiply success:', multiply(4, 6) === 24);
 
@@ -58,7 +58,7 @@ Instructions: "Write a function that returns the value of an array at a specifie
 Example: "valueAtIndex(['Mercury', 'Venus', 'Earth', 'Mars'], 2) should return 'Earth'"
 ===================== */
 
-let valueAtIndex = (list,listnum) => {return list[listnum]};
+let valueAtIndex = (list, listnum) => {return list[listnum]};
 
 console.log('valueAtIndex success:', valueAtIndex([9, 8, 7, 6, 5], 2) === 7);
 
@@ -67,7 +67,7 @@ Instructions: "Write a function that returns the value of an object at a specifi
 Example: "valueAtKey({'name': 'Nathan'}, 'name') should return 'Nathan'"
 ===================== */
 
-let valueAtKey = (obj,key) => {
+let valueAtKey = (obj, key) => {
     return obj[key];
 };
 
@@ -87,6 +87,6 @@ console.log('isEven success:', isEven(2) === true && isEven(3) === false);
 Instructions: Write a function that returns true if a number is odd.
 ===================== */
 
-let isOdd = (odd) => {return odd%2!=0;};
+let isOdd = (odd) => {return odd%2!=0};
 
 console.log('isOdd success:', isOdd(4) === false && isOdd(5) === true);
