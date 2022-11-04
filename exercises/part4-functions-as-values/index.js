@@ -36,10 +36,10 @@ Instructions: Write a function which takes an array and returns a new array,
 ===================== */
 
 let map = (arr, func) => {
-  mapArr = [];
+  let mapArr = [];
   for (let i = 0; i< arr.length; i++) {
     mapArr.push(func(arr[i]));
-  } 
+  }
   return mapArr;
 };
 
