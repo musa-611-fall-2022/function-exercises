@@ -37,7 +37,7 @@ for (let num = 1; num <= 100; num++ ) {
         console.log("Fizz");
     }
     else {
-        console.log(num)
+        console.log(num);
     }
 }
 
