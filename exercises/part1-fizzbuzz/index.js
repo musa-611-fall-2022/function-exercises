@@ -25,8 +25,57 @@ Start code
 
 ===================== */
 
+// step 1
+function counting(start, end){
+    return Array(end - start + 1).fill().map((_, idx) => start + idx);
+}
+let oneHun = counting(1, 100);
+console.log(oneHun);
 
+//step 2
 
+function FizzBuzz(array){
+    let array2 = [];
+    for (let i = 0; i < array.length; i++) {
+        let mod3 = array[i]%3;
+        let mod5 = array[i]%5;
+        if (mod3 == 0){
+            array2[i] = "Fizz";
+        } else if (mod5 == 0){
+            array2[i] = "Buzz";
+        } else {
+            array2[i] = array[i];
+        }
+      }
+    return array2;
+}
+
+let fizzbuzz = FizzBuzz(oneHun);
+console.log(fizzbuzz);
+
+//step3
+function step3(array){
+    let array2 = [];
+     for (let i = 0; i < array.length; i++) {
+        let mod3 = array[i]%3;
+        let mod5 = array[i]%5;
+        if (mod3 == 0 && mod5 == 0){
+            array2[i] = "FizzBuzz";
+        } else if (mod3 == 0 && mod5 != 0){
+            array2[i] = "Fizz";
+        } else if (mod5 == 0 && mod3 != 0){
+            array2[i] = "Buzz";
+        } else {
+            array2[i] = array[i];
+        }
+      }
+    return array2;
+}
+
+let fizzybuzzy = step3(oneHun);
+for (let i = 0; i < fizzybuzzy.length; i++){
+    console.log(fizzybuzzy[i]);
+}
 
 /* =====================
 
