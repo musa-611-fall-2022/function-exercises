@@ -74,7 +74,7 @@ function step3(array){
 
 let fizzybuzzy = step3(oneHun);
 for (let i = 0; i < fizzybuzzy.length; i++){
-    console.log(fizzybuzzy[i])
+    console.log(fizzybuzzy[i]);
 }
 
 /* =====================
