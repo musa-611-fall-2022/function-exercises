@@ -77,9 +77,6 @@ let reduce = (arr, func, ini) => {
   }
   return final;
 };
-
-
-
 console.log('reduce success #1:', reduce([1, 2, 3, 4, 5, 4, 4], add, 0) === 23);
 console.log('reduce success #2:', reduce([1, 2, 3, 4, 5, 4, 4], multiply, 1) === 1920);
 console.log('reduce success #3:', _(reduce([1, 2, 3, 4, 5, 4, 4], (x, y) => [y, ...x], [])).isEqual([4, 4, 5, 4, 3, 2, 1]));
@@ -97,6 +94,6 @@ let sumSquares = (arr) => {
     sqarr[i] = multiply(arr[i], arr[i]);
   }
   return reduce(sqarr, add, 0);
-}; 
+};
 
 console.log('sumSquares success:', sumSquares([1, 2, 3, 4]) === 30);
