@@ -19,6 +19,8 @@ let age = (birthYear) => {
     return 2022-birthYear;
 };
 
+console.log('age:', age(1991))
+
 console.log('age success:', age(1971) === 51);
 
 /* =====================

@@ -43,4 +43,4 @@ for ( var n = 1; n < 101; n ++ ) {
     // otherwise just print the number
     else
       console.log( n );
-  } 
+  };
