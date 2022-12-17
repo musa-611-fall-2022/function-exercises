@@ -18,7 +18,7 @@ Example: countItem(['a', 'b', 'a'], 'a') should return 2
 
 let countItem = (arr, item) => {
   let num = 0;
-  for (i = 0; i < length(arr); i++) {
+  for (i = 0; i < arr.length; i++) {
     if (arr[i] == item) {
       num++;
     }
@@ -50,7 +50,7 @@ let filterEven = (arr) => {
       newarr.push(item);
     }
   }
-
+  return (newarr);
 };
 
 console.log('filterEven success:', _(filterEven([1, 2, 3, 4, 5, 4, 4])).isEqual([2, 4, 4, 4]));
@@ -116,8 +116,8 @@ let timesThree = (n) => {
 };
 
 let mapTriple = (arr) => {
+  let newlist = [];
   for (const item of arr) {
-    let newlist = [];
     newlist.push(timesThree(item));
   }
   return (newlist);
