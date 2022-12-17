@@ -39,7 +39,7 @@ Instructions: Write a function which takes an array and returns a new array,
 let map = (arr, func) => {
   let newarr = [];
   for (const item of arr) {
-    funcitem = func(item);
+    let funcitem = func(item);
     newarr.push(funcitem);
   }
   return (newarr);

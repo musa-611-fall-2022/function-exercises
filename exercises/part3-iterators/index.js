@@ -18,7 +18,7 @@ Example: countItem(['a', 'b', 'a'], 'a') should return 2
 
 let countItem = (arr, item) => {
   let num = 0;
-  for (i = 0; i < arr.length; i++) {
+  for (let i = 0; i < arr.length; i++) {
     if (arr[i] == item) {
       num++;
     }
@@ -95,7 +95,7 @@ let plusOne = (num) => {
 let mapIncrement = (arr) => {
   let newlist = [];
   for (const item of arr) {
-    newitem = plusOne(item);
+    let newitem = plusOne(item);
     newlist.push(newitem);
   }
   return (newlist);
