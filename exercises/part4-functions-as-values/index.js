@@ -88,7 +88,7 @@ Bonus: Create a function called sumSquares that takes an array and returns
 
 let sumSquares = (arr) => {
   let s = 0;
-  s=reduce(arr, (x, y) => x + y*y, SS);
+  s=reduce(arr, (x, y) => x + y*y, s);
   return s;
 };
 
