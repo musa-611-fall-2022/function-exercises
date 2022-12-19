@@ -22,27 +22,15 @@ Believe it or not, this is a common programming challenge in job interviews!
 
 
 
-for ( var n = 1; n < 101; n ++ ) {
-  
-  
-    var Three = n % 3;
-    var Five = n % 5;
-    
-    
-    if ( (Three == 0) && (Five == 0) ) 
-        console.log( "FizzBuzz");
-    
-    // if the number is divisible by 3, then print Fizz
-    else if (Three == 0)
-      console.log( "Fizz");
-    
-    // if the number is divisible by 5, then print Buzz
-    else if (Five == 0)
-      console.log( "Buzz");
-    
-    // otherwise just print the number
-    else
-      console.log( n );
+for(let i=1; i<=100; i++){
+  if(i%3 == 0 & i%5 !== 0) {
+      console.log("Fizz");
+  }else if(i%5 == 0 & i%3 !== 0){
+      console.log("Buzz");
+  }else if(i%3 == 0 & i%5 == 0){
+      console.log("FizzBuzz");
+  }else{
+      console.log(i);
   }
+}
 
-  

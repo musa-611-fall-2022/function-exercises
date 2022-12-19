@@ -1,7 +1,7 @@
 /* global describe, beforeAll, it, page, expect */
 
 beforeAll(async () => {
-  await page.goto('http://10.103.82.200:8081/exercises/part4-functions-as-values/');
+  await page.goto('http://localhost:8080/exercises/part4-functions-as-values/');
 });
 
 describe('The filter function', () => {

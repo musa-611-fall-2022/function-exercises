@@ -1,7 +1,7 @@
 /* global describe, beforeAll, it, page, expect */
 
 beforeAll(async () => {
-  await page.goto('http://10.103.82.200:8081/exercises/part2-basic-functions/');
+  await page.goto('http://localhost:8080/exercises/part2-basic-functions/');
 });
 
 describe('The age function', () => {

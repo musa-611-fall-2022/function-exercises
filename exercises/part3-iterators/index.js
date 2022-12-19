@@ -20,10 +20,10 @@ let countItem = (arr, item) => {
   let num=0;
   for(let i=0;i<=arr.length;i++){
     if(arr[i]==item){
-      num=num+1;
+      num++;
     }
   }
-  return num;
+  return (num);
 };
 
 console.log('countItem success:', countItem([1, 2, 3, 4, 5, 4, 4], 4) === 3);
@@ -108,7 +108,7 @@ Instructions: Write a function which takes an array and returns a new array with
 ===================== */
 
 let timesThree = (n) => {
-  return n * 3
+  return n * 3;
 };
 
 let mapTriple = (arr) => {
@@ -129,7 +129,7 @@ Instructions: Write a function which takes an array and returns the sum of all
 ===================== */
 
 let add = (n1, n2) => {
-  return n1 + n2
+  return n1 + n2;
 };
 
 let reduceSum = (arr) => {
@@ -150,7 +150,7 @@ Instructions: Write a function which takes an array and returns the product of
 ===================== */
 
 let multiply = (n1, n2) => {
-  return n1 * n2
+  return n1 * n2;
 };
 
 let reduceProduct = (arr) => {

@@ -70,7 +70,7 @@ Instructions: Write a function which takes an array and returns the value of
 let reduce = (arr, func, initial) => {
   let x=initial;
   for(let i=0;i<=arr.length;i++){
-    x=func(x,arr[i]);
+    x=func(x, arr[i]);
   }
   return x;
 };
