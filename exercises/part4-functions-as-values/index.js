@@ -68,7 +68,7 @@ Instructions: Write a function which takes an array and returns the value of
 ===================== */
 
 let reduce = (arr, func, initial) => {
-  
+
   for(const i of arr){
     initial = func(initial, i);
   }
