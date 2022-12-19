@@ -17,9 +17,9 @@ Example: countItem(['a', 'b', 'a'], 'a') should return 2
 ===================== */
 
 let countItem = (arr, item) => {
-  let num=0;
-  for(let i=0;i<=arr.length;i++){
-    if(arr[i]==item){
+  let num = 0;
+  for(let i = 0; i< arr.length; i++){
+    if(arr[i] == item){
       num++;
     }
   }
@@ -36,17 +36,17 @@ Instructions: Write a function which takes an array and returns a new array with
 ===================== */
 
 let isEven = (x) => {
-  if(x%2==0){
+  if(x % 2 == 0 ){
     return true;
 }
 return false;
 };
 
 let filterEven = (arr) => {
-  let arrx=[];
-  for(let i=0;i<=arr.length;i++){
-    if (isEven(arr[i]) == true){
-      arrx.push(arr[i]);
+  let arrx= new Array();
+  for(const i of arr){
+    if (isEven(i) == true){
+      arrx.push(i);
     }
   }
   return arrx;
@@ -68,13 +68,13 @@ return true;
 };
 
 let filterOdd = (arr) => {
-  let arrx=[];
-  for(let i=0;i<=arr.length;i++){
-    if (isOdd(arr[i]) == true){
-      arrx.push(arr[i]);
+  let newarr = new Array();
+  for (const item of arr) {
+    if (isOdd(item) == true) {
+      newarr.push(item);
     }
   }
-  return arrx;
+  return (newarr);
 };
 
 console.log('filterOdd success:', _(filterOdd([1, 2, 3, 4, 5, 4, 4])).isEqual([1, 3, 5]));
@@ -87,13 +87,13 @@ Instructions: Write a function which takes an array and returns a new array with
 ===================== */
 
 let plusOne = (n) => {
-  return n+1;
+  return (n+1);
 };
 
 let mapIncrement = (arr) => {
   let arrx=[];
-  for(let i=0;i<=arr.length;i++){
-      arrx.push(plusOne(arr[i]));
+  for(const i of arr){
+      arrx.push(plusOne(i));
     }
   return arrx;
 };
@@ -108,13 +108,13 @@ Instructions: Write a function which takes an array and returns a new array with
 ===================== */
 
 let timesThree = (n) => {
-  return n * 3;
+  return (n * 3);
 };
 
 let mapTriple = (arr) => {
   let arrx=[];
-  for(let i=0;i<=arr.length;i++){
-      arrx.push(timesThree(arr[i]));
+  for(const i of arr){
+      arrx.push(timesThree(i));
     }
   return arrx;
 };
@@ -129,13 +129,14 @@ Instructions: Write a function which takes an array and returns the sum of all
 ===================== */
 
 let add = (n1, n2) => {
-  return n1 + n2;
+  return (n1 + n2);
 };
 
 let reduceSum = (arr) => {
   let x = 0;
-    for (let i = 0; i < arr.length; i++) {
-        x = add(x, arr[i]);
+
+    for (const i of arr) {
+        x = add(i, x);
     }
     return x;
 };
@@ -150,13 +151,13 @@ Instructions: Write a function which takes an array and returns the product of
 ===================== */
 
 let multiply = (n1, n2) => {
-  return n1 * n2;
+  return (n1 * n2);
 };
 
 let reduceProduct = (arr) => {
-  let x = 0;
-    for (let i = 0; i < arr.length; i++) {
-        x = multiply(x, arr[i]);
+  let x = 1;
+    for (const i of arr) {
+        x = multiply(i, x);
     }
     return x;
 };
