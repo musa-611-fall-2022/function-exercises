@@ -85,7 +85,7 @@ Bonus: Create a function called sumSquares that takes an array and returns
 ===================== */
 
 let sumSquares = (arr) => {
-  return reduce(map(arr,(x)=>x*x),add, 0);
+  return reduce(map(arr, (x)=>x*x), add, 0);
 };
 
 console.log('sumSquares success:', sumSquares([1, 2, 3, 4]) === 30);

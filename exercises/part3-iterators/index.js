@@ -17,10 +17,10 @@ Example: countItem(['a', 'b', 'a'], 'a') should return 2
 ===================== */
 
 let countItem = (arr, item) => {
-  let sum = 0
+  let sum = 0;
   for (const n of arr){
     if (n === item){
-      sum ++
+      sum ++;
     }
   }
   return sum;
@@ -68,13 +68,13 @@ let isOdd = (n) => {
   }
 };
 let filterOdd = (arr) => {
-  let newArray=[]
+  let newArray=[];
   for(const n of arr){
     if (isOdd(n)){
       newArray.push(n);
     }
   }
-  return newArray
+  return newArray;
 };
 
 console.log('filterOdd success:', _(filterOdd([1, 2, 3, 4, 5, 4, 4])).isEqual([1, 3, 5]));
@@ -86,7 +86,7 @@ Instructions: Write a function which takes an array and returns a new array with
   original array.
 ===================== */
 
-let plusOne = (n) => {return(n+1);};
+let plusOne = (n) => {return(n+1)};
 let mapIncrement = (arr) => {
   let newArray = [];
   for (const n of arr){
@@ -142,7 +142,7 @@ Instructions: Write a function which takes an array and returns the product of
   original array.
 ===================== */
 
-let multiply = (n1, n2) => {return (n1*n2);};
+let multiply = (n1, n2) => {return (n1*n2)};
 let reduceProduct = (arr) => {
   let product = 1;
   for (const n of arr){
