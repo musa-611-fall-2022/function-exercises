@@ -19,12 +19,12 @@ Example: countItem(['a', 'b', 'a'], 'a') should return 2
 let countItem = (arr, item) => {
   let count = 0;
   for(let i = 0; i < arr.length; i++){
-    if(arr[i] == item){
+    if(arr[i] === item){
       count = count + 1;
     }
-
-    return(count);
     }
+    return(count);
+
 };
 
 console.log('countItem success:', countItem([1, 2, 3, 4, 5, 4, 4], 4) === 3);
@@ -36,7 +36,7 @@ Instructions: Write a function which takes an array and returns a new array with
   original array.
 ===================== */
 
-let isEven = (n) => {if(n % 2 == 0){
+let isEven = (n) => {if(n % 2 === 0){
   return true;}
   else{
     return false;
@@ -45,13 +45,15 @@ let isEven = (n) => {if(n % 2 == 0){
 let filterEven = (arr) => {
   evenArray = [];
   let index = 0;
-  for(let i = 0; i < arr.length; i++){
-    if(isEven(arr[i]) == true){
-      evenArray[index] = arr[i];
-      index ++;
+  for(let i of arr ){
+    if(isEven(i) === true){
+      evenArray[index] = i;
+      index = index + 1;
     }
-    return evenArray;
-}};
+}
+return evenArray;
+
+};
 
 console.log('filterEven success:', _(filterEven([1, 2, 3, 4, 5, 4, 4])).isEqual([2, 4, 4, 4]));
 
@@ -62,19 +64,19 @@ Instructions: Write a function which takes an array and returns a new array with
 ===================== */
 
 let isOdd = (n) => {
-  if(n % 2 != 0){
-    return true;}
+  if(n % 2 === 0){
+    return false;}
     else{
-      return false;
+      return true;
     }
 };
 let filterOdd = (arr) => {
   oddArray = [];
   let index = 0;
-  for(let i = 0; i < arr.length; i++){
-    if(isOdd(arr[i]) == true){
-      evenArray[index] = arr[i];
-      index ++;
+  for( let i of arr ){
+    if(isOdd(i) === true){
+      oddArray[index] = i;
+      index = index + 1;
     }}
     return oddArray;
 };
@@ -92,8 +94,10 @@ let plusOne = (n) => {return (n + 1)};
 let mapIncrement = (arr) => {
   plusArray = [];
   let index = 0;
-  for(let i = 0; i < arr.length; i++){
-    plusArray[index] = plusOne(arr[i]);}
+  for(let i of arr ){
+    plusArray[index] = plusOne(i);
+    index = index + 1;
+  }
     return plusArray;
 };
 
@@ -111,7 +115,9 @@ let mapTriple = (arr) => {
   threeArray = [];
   let index = 0;
   for(let i = 0; i < arr.length; i++){
-    threeArray[index] = timesThree(arr[i]);}
+    threeArray[index] = timesThree(arr[i]);
+    index = index + 1;
+  }
     return threeArray;
 };
 
